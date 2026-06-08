@@ -381,9 +381,19 @@ h1 em,h2 em{font-style:italic;color:var(--gold-bright)}
     flex-direction: column;
     gap: 1.5rem;
   }
-  .impact-numbers {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+ .impact-numbers {
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 0.75rem !important;
+  }
+  .impact-num {
+    padding: 1rem !important; 
+  }
+  .impact-num strong {
+    font-size: clamp(1.4rem, 4.5vw, 1.85rem) !important; 
+  }
+  .impact-num span {
+    font-size: 0.65rem !important;
+    letter-spacing: 0.04em !important;
   }
   .footer-main {
     grid-template-columns: 1fr;
