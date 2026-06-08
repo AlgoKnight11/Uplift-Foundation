@@ -363,9 +363,30 @@ h1 em,h2 em{font-style:italic;color:var(--gold-bright)}
   .hero-wrap {
     max-width: 100%;
   }
-  .hero-metrics {
-    flex-direction: column;
-    gap: 1.5rem;
+   .hero-metrics {
+    flex-direction: row !important; 
+    justify-content: space-between; 
+    gap: 0.25rem !important;
+    width: 100%;
+    margin-top: 2.25rem;
+  }
+  .hero-metric {
+    flex: 1;
+    padding-left: 0.5rem !important; 
+    padding-top: 0 !important; 
+    border-top: none !important; 
+    border-left: 2px solid rgba(200,162,78,.45) !important; 
+  }
+  .hero-metric strong {
+    font-size: clamp(1.45rem, 5.2vw, 1.85rem) !important; 
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .hero-metric span {
+    font-size: clamp(0.625rem, 2.2vw, 0.725rem) !important; 
+    white-space: nowrap; 
+    margin-top: 0.35rem;
+    letter-spacing: 0.05em;
   }
   .hero-metric {
     padding-left: 0;
